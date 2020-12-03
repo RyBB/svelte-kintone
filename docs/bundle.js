@@ -1756,7 +1756,7 @@ var app = (function () {
     	return block;
     }
 
-    // (51:34)      <table class="origin-table recordlist-gaia">       <thead>         {#each fields as field}
+    // (58:34)      <table class="origin-table recordlist-gaia">       <thead>         {#each fields as field}
     function create_then_block(ctx) {
     	let table;
     	let thead;
@@ -1794,10 +1794,10 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(thead, file, 52, 6, 1624);
-    			add_location(tbody, file, 57, 6, 1830);
-    			attr_dev(table, "class", "origin-table recordlist-gaia svelte-1fk1nmh");
-    			add_location(table, file, 51, 4, 1573);
+    			add_location(thead, file, 59, 6, 1913);
+    			add_location(tbody, file, 64, 6, 2119);
+    			attr_dev(table, "class", "origin-table recordlist-gaia svelte-1w7evxi");
+    			add_location(table, file, 58, 4, 1862);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, table, anchor);
@@ -1874,14 +1874,14 @@ var app = (function () {
     		block,
     		id: create_then_block.name,
     		type: "then",
-    		source: "(51:34)      <table class=\\\"origin-table recordlist-gaia\\\">       <thead>         {#each fields as field}",
+    		source: "(58:34)      <table class=\\\"origin-table recordlist-gaia\\\">       <thead>         {#each fields as field}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (54:8) {#each fields as field}
+    // (61:8) {#each fields as field}
     function create_each_block_2(ctx) {
     	let th;
     	let t0_value = /*field*/ ctx[8] + "";
@@ -1902,8 +1902,8 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			t2 = text(t2_value);
-    			attr_dev(th, "class", "origin-th recordlist-header-cell-gaia svelte-1fk1nmh");
-    			add_location(th, file, 54, 10, 1674);
+    			attr_dev(th, "class", "origin-th recordlist-header-cell-gaia svelte-1w7evxi");
+    			add_location(th, file, 61, 10, 1963);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, th, anchor);
@@ -1931,14 +1931,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(54:8) {#each fields as field}",
+    		source: "(61:8) {#each fields as field}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (61:12) {#each fields as field}
+    // (68:12) {#each fields as field}
     function create_each_block_1(ctx) {
     	let td;
     	let t_value = /*record*/ ctx[5][/*field*/ ctx[8]].value + "";
@@ -1948,8 +1948,8 @@ var app = (function () {
     		c: function create() {
     			td = element("td");
     			t = text(t_value);
-    			attr_dev(td, "class", "origin-td recordlist-cell-gaia svelte-1fk1nmh");
-    			add_location(td, file, 61, 14, 1979);
+    			attr_dev(td, "class", "origin-td recordlist-cell-gaia svelte-1w7evxi");
+    			add_location(td, file, 68, 14, 2268);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, td, anchor);
@@ -1967,14 +1967,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(61:12) {#each fields as field}",
+    		source: "(68:12) {#each fields as field}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (59:8) {#each recordsData as record}
+    // (66:8) {#each recordsData as record}
     function create_each_block(ctx) {
     	let tr;
     	let t;
@@ -1995,8 +1995,8 @@ var app = (function () {
     			}
 
     			t = space();
-    			attr_dev(tr, "class", "origin-tr recordlist-row-gaia svelte-1fk1nmh");
-    			add_location(tr, file, 59, 10, 1886);
+    			attr_dev(tr, "class", "origin-tr recordlist-row-gaia svelte-1w7evxi");
+    			add_location(tr, file, 66, 10, 2175);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -2042,7 +2042,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(59:8) {#each recordsData as record}",
+    		source: "(66:8) {#each recordsData as record}",
     		ctx
     	});
 
@@ -2066,6 +2066,19 @@ var app = (function () {
 
     function create_fragment(ctx) {
     	let main;
+    	let div5;
+    	let div0;
+    	let p0;
+    	let t1;
+    	let div1;
+    	let t2;
+    	let div2;
+    	let p1;
+    	let t4;
+    	let div3;
+    	let t6;
+    	let div4;
+    	let t7;
     	let promise;
 
     	let info = {
@@ -2084,7 +2097,39 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			main = element("main");
+    			div5 = element("div");
+    			div0 = element("div");
+    			p0 = element("p");
+    			p0.textContent = "☁ kintone";
+    			t1 = space();
+    			div1 = element("div");
+    			t2 = space();
+    			div2 = element("div");
+    			p1 = element("p");
+    			p1.textContent = "Svelteで一覧作ってみた";
+    			t4 = space();
+    			div3 = element("div");
+    			div3.textContent = "🏠 ＞ スペース: 一覧自作 ＞ アプリ：Svelte一覧";
+    			t6 = space();
+    			div4 = element("div");
+    			t7 = space();
     			info.block.c();
+    			attr_dev(p0, "class", "svelte-1w7evxi");
+    			add_location(p0, file, 51, 24, 1584);
+    			attr_dev(div0, "class", "header svelte-1w7evxi");
+    			add_location(div0, file, 51, 4, 1564);
+    			attr_dev(div1, "class", "header-black svelte-1w7evxi");
+    			add_location(div1, file, 52, 4, 1611);
+    			attr_dev(p1, "class", "svelte-1w7evxi");
+    			add_location(p1, file, 53, 30, 1674);
+    			attr_dev(div2, "class", "header-image svelte-1w7evxi");
+    			add_location(div2, file, 53, 4, 1648);
+    			attr_dev(div3, "class", "app-index-bread svelte-1w7evxi");
+    			add_location(div3, file, 54, 4, 1706);
+    			attr_dev(div4, "class", "app-index-toolbar svelte-1w7evxi");
+    			add_location(div4, file, 55, 4, 1776);
+    			attr_dev(div5, "class", "container");
+    			add_location(div5, file, 50, 2, 1536);
     			add_location(main, file, 49, 0, 1527);
     		},
     		l: function claim(nodes) {
@@ -2092,6 +2137,19 @@ var app = (function () {
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, main, anchor);
+    			append_dev(main, div5);
+    			append_dev(div5, div0);
+    			append_dev(div0, p0);
+    			append_dev(div5, t1);
+    			append_dev(div5, div1);
+    			append_dev(div5, t2);
+    			append_dev(div5, div2);
+    			append_dev(div2, p1);
+    			append_dev(div5, t4);
+    			append_dev(div5, div3);
+    			append_dev(div5, t6);
+    			append_dev(div5, div4);
+    			append_dev(main, t7);
     			info.block.m(main, info.anchor = null);
     			info.mount = () => main;
     			info.anchor = null;
